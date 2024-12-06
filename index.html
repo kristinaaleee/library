@@ -7,30 +7,30 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="container">Space for adding books
-
+    <div id="container">
+    <div class="page-header">My Library</div>
     <button id="showForm">Add New Book</button>
     <dialog id="dialog">
         <form action="" method="dialog" class="form-container">
-            <label for="title">Title:</label>
+            <label for="title">Title: </label>
             <input type="text" name="title">
 
-            <label for="author">Author:</label>
+            <label for="author">Author: </label>
             <input type="text" name="author">
 
-            <!-- tel type? -->
-            <label for="pages">Pages:</label>
-            <input type="text" name="pages">
+            <!-- tel type? only numbers can be entered -->
+            <label for="pages">Pages: </label>
+            <input type="tel" name="pages">
 
             <!-- checkbox? -->
-            <label for="read">Read:</label>   
-            <input type="text" name="text">
+            <label for="read">Read: </label>   
+            <input type="checkbox" name="read" id="read" value="no">
 
             <button value="cancel" formmethod="dialog" id="cancel">Cancel</button>
             <button type="submit" id="submit"> Submit </button>
-    </dialog>
+    
     </form>
-
+    </dialog>
 
 
     </div>
