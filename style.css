@@ -30,10 +30,133 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+:root{
+    --green: #283618;
+    --light-green: #606C38;
+    --beige: #FEFAE0;
+    --tan: #BC6C25;
+    --light-tan: #DDA15E;
+}
+body{
+    background-color: var(--beige);
+}
+#container{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 
+    position: relative;
+}
+.margin{
+    padding: 1.2rem 8rem;
+}
+.page-header{
+    font: 700 3rem "Outfit", sans-serif;
+    background-color: #283618;
+    justify-content: space-between;
+    color: var(--beige);
+}
 
+#dialog{
+    background-color: var(--light-tan);
+    color: var(--green);
+    border-radius: 2rem;
+    border: 2px;
+    padding: 2rem;
+
+    position: absolute;
+    left: 40%;
+    top: 30%;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+label, #read{
+    margin: 1rem 0rem 0rem;
+}
+#showForm{
+    font-size: 1.3rem;
+    position: fixed;
+    bottom: 3.5rem;
+    right: 3.5rem;
+    z-index: 1;
+}
+input{
+    border-radius: 1rem;
+    border-style: none;
+    background-color: #f5e1ca;
+}
+input:focus{
+    outline: 2px solid var(--tan);
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.center{
+    justify-content: center;
+}
+.flex-row button{
+    width: 40%;
+    margin: 1rem 0rem ;
+
+    border-radius: 200px;
+    border: 0px solid ;
+}
+.main-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+    gap: 2rem;
+}
 .card{
-    border: 2px solid red;
+    color: var(--beige);
+    background-color: var(--light-green);
+    border-radius: 1rem;
+    box-shadow: .2rem .2rem .5rem rgb(134, 134, 134);
     text-transform: capitalize;
+    padding-top: 1.2rem;
+    min-height: 250px;
+
+    position: relative;
+}
+.card p{
+    padding: 3px 2rem;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+.card button{
+    margin: .5rem;
+    font-size: 1.1rem;
+}
+.delete{
+    position: absolute;
+    bottom: 1rem;
+    right: 1.2rem;
+}
+.read-toggle{
+    position: absolute;
+    bottom: 1rem;
+    left: 1.2rem;
+}
+
+svg{
+    height: 50px;
+    fill: var(--beige);
+}
+button{
+    background-color: var(--green);
+    color: var(--beige);
+    padding: .5rem 1rem;
+    border: 3px solid var(--green);
+    border-radius: 2rem;
+}
+button:hover{
+    background-color: var(--beige);
+    color: var(--green);
+    border: 3px solid var(--green);
 }
 

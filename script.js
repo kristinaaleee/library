@@ -23,7 +23,7 @@ function addBookToLibrary(book){
     myLibrary.push(book);
 
     for (let key in book) {
-        //is this an unsafe 
+        //unsafe? 
         if(book.hasOwnProperty(key)){
             const row = document.createElement('p');
             row.classList.add(`${key}`);
@@ -34,7 +34,7 @@ function addBookToLibrary(book){
             card.appendChild(row);
         }
     }
-    container.appendChild(card);
+    mainContent.appendChild(card);
 
     const deleteButton = document.createElement('button');
     const delText = document.createTextNode('Delete');
@@ -59,6 +59,7 @@ function addBookToLibrary(book){
 };
 
 const container = document.getElementById('container');
+const mainContent = document.querySelector('.main-content');
 
 const form = document.querySelector('form');
 const showButton = document.getElementById('showForm');
@@ -91,5 +92,5 @@ submitButton.addEventListener("click", function(event){
 
 const Lolita = new Book('Lolita','Vladimir Nabokov', '336', 'no')
 addBookToLibrary(Lolita);
-const Bob = new Book('Lolita','Vladimikov', '336', 'no')
-addBookToLibrary(Bob);
+const Caterpillar = new Book('The Very Hungry Caterpillar','Eric Carle', '22', 'yes')
+addBookToLibrary(Caterpillar);
