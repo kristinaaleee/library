@@ -142,7 +142,6 @@ input:focus{
     bottom: 1rem;
     left: 1.2rem;
 }
-
 svg{
     height: 50px;
     fill: var(--beige);
@@ -150,9 +149,10 @@ svg{
 button{
     background-color: var(--green);
     color: var(--beige);
-    padding: .5rem 1rem;
+    padding: .5rem .7rem;
     border: 3px solid var(--green);
     border-radius: 2rem;
+    text-align: center;
 }
 button:hover{
     background-color: var(--beige);
